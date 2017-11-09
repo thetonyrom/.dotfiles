@@ -69,3 +69,4 @@ set tags=./tags;
 set grepprg=ack
 set colorcolumn=81
 highlight ColorColumn ctermbg=7
+autocmd BufLeave,FocusLost * silent! wall

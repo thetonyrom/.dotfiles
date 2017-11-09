@@ -1,0 +1,16 @@
+#!/bin/bash
+
+DOTDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# vim
+ln -s ${DOTDIR}/.vimrc ~/.vimrc
+
+# zsh
+ln -s ${DOTDIR}/.zshrc ~/.zshrc
+
+# git
+ln -s ${DOTDIR}/.gitconfig ~/.gitconfig
+
+# ack
+ln -s ${DOTDIR}/.ackrc ~/.ackrc
+

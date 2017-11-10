@@ -10,6 +10,7 @@ ln -s ${DOTDIR}/.zshrc ~/.zshrc
 
 # git
 ln -s ${DOTDIR}/.gitconfig ~/.gitconfig
+ln -s ${DOTDIR}/.gitignore_global ~/.gitignore_global
 
 # ack
 ln -s ${DOTDIR}/.ackrc ~/.ackrc

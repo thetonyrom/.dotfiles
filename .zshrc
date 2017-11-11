@@ -7,7 +7,7 @@ export ZSH=/Users/brick/.dotfiles/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="crunch"
+ZSH_THEME="lambda"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -84,14 +84,16 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
-# # Load rbenv automatically by appending
-# the following to ~/.zshrc:
+
+# Load rbenv automatically
 
 eval "$(rbenv init -)"
 
 # autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
 # postgresql
 export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
+
 # pretty json
 alias pretty_json='python -m json.tool'

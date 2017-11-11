@@ -43051,13 +43051,13 @@
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>785 242 445 206 0 0 1440 878 </string>
+	<string>785 141 615 173 0 0 1440 878 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 365 620 392 0 0 1440 878 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>834 477 597 401 0 0 1440 878 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>343 340 796 473 0 0 1440 878 </string>
+	<string>343 337 796 473 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 4 1440 874 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -43843,7 +43843,7 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 12</string>
+			<string>SourceCodeProForPowerline-Regular 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
@@ -43915,7 +43915,7 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
-			<false/>
+			<true/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>

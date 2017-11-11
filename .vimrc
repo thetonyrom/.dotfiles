@@ -1,13 +1,14 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible                " be iMproved, required
+filetype off                    " required
 
 " Vundle & plugins
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
   Plugin 'VundleVim/Vundle.vim'
-  Plugin 'scrooloose/nerdtree'
   Plugin 'vim-airline/vim-airline'
+  Plugin 'scrooloose/nerdtree'
+  Plugin 'tpope/vim-fugitive'
   Plugin 'tpope/vim-rails'
   Plugin 'Yggdroot/indentLine'
 call vundle#end()
@@ -30,7 +31,7 @@ set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
-set number                      " display line numbers
+set  relativenumber             " display line numbers
 
 set tags=./tags;                " ctags -R --exclude=.git --exclude=log *
 

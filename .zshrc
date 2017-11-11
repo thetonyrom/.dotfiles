@@ -97,3 +97,6 @@ export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
 
 # pretty json
 alias pretty_json='python -m json.tool'
+
+# just clear
+alias c=clear

@@ -12,6 +12,7 @@ call vundle#begin()
   Plugin 'tpope/vim-rails'
   Plugin 'Yggdroot/indentLine'
   Plugin 'kien/ctrlp.vim'
+  Plugin 'thoughtbot/vim-rspec'
 call vundle#end()
 
 filetype plugin indent on       " load file type plugins + indentation
@@ -32,10 +33,10 @@ set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
-set  relativenumber             " display line numbers
-
+set number                      " display line numbers
+ 
 set tags=./tags;                " ctags -R --exclude=.git --exclude=log *
-
+ 
 " Search tool
 set grepprg=ack
 
@@ -43,5 +44,12 @@ set grepprg=ack
 set colorcolumn=81
 highlight ColorColumn ctermbg=0
 
-" Save on focus lost
-autocmd BufLeave,FocusLost * silent! wall
+" Indention lines
+let g:indentLine_char = '›'
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+

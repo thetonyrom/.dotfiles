@@ -3,3 +3,5 @@
 	email = thetonyrom@gmail.com
 [core]
 	excludesfile = /Users/brick/.gitignore_global
+[alias]
+  co = checkout

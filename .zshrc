@@ -51,7 +51,7 @@ ZSH_THEME="lambda"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails)
+plugins=(git rails bundler)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,3 +97,5 @@ export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
 
 # Aliases
 . ~/.aliases
+
+export PATH=".git/safe/../../bin:$PATH"

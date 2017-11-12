@@ -11,6 +11,7 @@ call vundle#begin()
   Plugin 'tpope/vim-fugitive'
   Plugin 'tpope/vim-rails'
   Plugin 'Yggdroot/indentLine'
+  Plugin 'kien/ctrlp.vim'
 call vundle#end()
 
 filetype plugin indent on       " load file type plugins + indentation

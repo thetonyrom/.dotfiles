@@ -1,0 +1,6 @@
+# pretty json
+alias pj='python -m json.tool'
+
+# just clear
+alias c=clear
+

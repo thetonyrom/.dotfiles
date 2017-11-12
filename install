@@ -10,6 +10,7 @@ ln -s ${DOTDIR}/.tmux.conf ~/.tmux.conf
 
 # zsh
 ln -s ${DOTDIR}/.zshrc ~/.zshrc
+ln -s ${DOTDIR}/.aliases ~/.aliases
 
 # git
 ln -s ${DOTDIR}/.gitconfig ~/.gitconfig

@@ -4,3 +4,8 @@ alias pj='python -m json.tool'
 # just clear
 alias c=clear
 
+# ctags
+alias ctags="`brew --prefix`/bin/ctags"
+
+# sublime text
+alias st='subl .'

@@ -4,6 +4,7 @@ DOTDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # vim
 ln -s ${DOTDIR}/.vimrc ~/.vimrc
+ln -s ${DOTDIR}/.vim ~/.vim
 
 # tmux
 ln -s ${DOTDIR}/.tmux.conf ~/.tmux.conf

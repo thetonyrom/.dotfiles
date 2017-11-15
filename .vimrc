@@ -5,14 +5,15 @@ filetype off                    " required
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
-  Plugin 'VundleVim/Vundle.vim'
-  Plugin 'vim-airline/vim-airline'
-  Plugin 'scrooloose/nerdtree'
-  Plugin 'tpope/vim-fugitive'
-  Plugin 'tpope/vim-rails'
-  Plugin 'Yggdroot/indentLine'
-  Plugin 'kien/ctrlp.vim'
-  Plugin 'thoughtbot/vim-rspec'
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rails'
+Plugin 'Yggdroot/indentLine'
+Plugin 'kien/ctrlp.vim'
+Plugin 'thoughtbot/vim-rspec'
+Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()
 
 filetype plugin indent on       " load file type plugins + indentation
@@ -33,7 +34,7 @@ set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
-set number                      " display line numbers
+set relativenumber                      " display line numbers
  
 set tags=./tags;                " ctags -R --exclude=.git --exclude=log *
  
@@ -65,3 +66,4 @@ let NERDTreeMinimalUI=1
 
 " Show buffers
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_solarized_bg='dark'

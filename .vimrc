@@ -6,6 +6,10 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rails'
+Plug 'thoughtbot/vim-rspec'
+Plug 'mileszs/ack.vim'
 call plug#end()
 
 set encoding=utf-8                " the encoding displayed
@@ -46,3 +50,16 @@ map <leader>a :Ag!<space>
 
 let g:airline#extensions#tabline#enabled = 1 " airline displays buffers
 let g:airline_theme='base16'
+
+autocmd BufWritePre * %s/\s\+$//e  " auto remove trailing whitespaces
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
+" Faster grepping
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif

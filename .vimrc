@@ -63,3 +63,6 @@ map <Leader>a :call RunAllSpecs()<CR>
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
+
+" map NERDTree
+nmap <C-n> :NERDTreeToggle<CR>

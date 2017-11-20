@@ -9,3 +9,6 @@ alias ctags="`brew --prefix`/bin/ctags"
 
 # sublime text
 alias st='subl .'
+
+# run jekyll server
+alias js='jekyll s'

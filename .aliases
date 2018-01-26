@@ -12,3 +12,6 @@ alias st='subl .'
 
 # run jekyll server
 alias js='jekyll s'
+
+# change directory
+alias up='cd ..'

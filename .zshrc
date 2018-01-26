@@ -1,3 +1,5 @@
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 # Path to your oh-my-zsh installation.
 ZSH=~/.dotfiles/.oh-my-zsh
 
@@ -10,7 +12,7 @@ ZSH_THEME="lambda"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails bundler)
+plugins=(git rails bundler rbenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -26,9 +28,6 @@ fi
 
 # autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-
-# postgresql
-export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
 
 # Aliases
 . ~/.aliases

@@ -10,6 +10,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
 Plug 'thoughtbot/vim-rspec'
 Plug 'mileszs/ack.vim'
+Plug 'Yggdroot/indentLine'
 call plug#end()
 
 set encoding=utf-8                " the encoding displayed
@@ -42,8 +43,8 @@ map <C-p> :FZF<CR>                " Cntrl-p for FZF
 let NERDTreeMinimalUI=1           " remove the help line at the top
 
 " map escape to pressing jk at the same time
-inoremap jk <Esc>
-inoremap kj <Esc>
+inoremap jf <Esc>
+inoremap fj <Esc>
 
 " map Silver Searcher
 map <leader>a :Ag!<space>
@@ -66,3 +67,6 @@ endif
 
 " map NERDTree
 nmap <C-n> :NERDTreeToggle<CR>
+
+" Show indent lines
+let g:indentLine_char = '|'

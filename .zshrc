@@ -35,3 +35,6 @@ fi
 # project's bin support
 # https://goo.gl/mTscM7
 export PATH=".git/safe/../../bin:$PATH"
+
+# default editor
+export EDITOR='/usr/local/bin/vim'

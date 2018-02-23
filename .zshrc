@@ -32,6 +32,9 @@ fi
 # Aliases
 . ~/.aliases
 
+# API keys
+. ~/.api_keys
+
 # project's bin support
 # https://goo.gl/mTscM7
 export PATH=".git/safe/../../bin:$PATH"

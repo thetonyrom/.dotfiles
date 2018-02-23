@@ -70,3 +70,10 @@ nmap <C-n> :NERDTreeToggle<CR>
 
 " Show indent lines
 let g:indentLine_char = '|'
+
+" Buffer switching
+map <C-J> :bprev<CR>
+map <C-K> :bnext<CR>
+
+" Automatically quit vim if NERDTree is last and only buffer
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
